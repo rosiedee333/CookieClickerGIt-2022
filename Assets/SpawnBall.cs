@@ -23,12 +23,12 @@ public class SpawnBall : MonoBehaviour
     public void SpawnOnButton() //function is called SpawnOnButton
     {
        
-        Debug.Log(meesage:"We have activated the button");
+        Debug.Log(message:"We have activated the button");
 
         //variable we made called randomX
         float randomX = Random.Range(-0.1f, 0.1f); //the f means float
 
-        _position.x += randomX:
+        _position.x += randomX;
 
         Instantiate(ballPrefab, _position, Quaternion.identity);
 
